@@ -1,0 +1,27 @@
+{
+  "name": "ai-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolineGard/ai-music.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolineGard/ai-music/issues"
+  },
+  "homepage": "https://github.com/CarolineGard/ai-music#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3", 
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  }
+}
