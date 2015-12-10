@@ -38,6 +38,16 @@ var app = express();
 app.use(express.static(__dirname + '/public'))
    .use(cookieParser());
 
+   // var request = require('request');
+request.get('https://www.googleapis.com/prediction/v1.6/projects/atlantean-field-115005/trainedmodels/languageidentifier?key=AIzaSyDwju_Rv4R9S7H8PWdGkzHKezrRsmDJ0RQ', function (error, response, body) {
+     if (!error && response.statusCode == 200) {
+       console.log('start'); // Show the HTML for the Google homepage
+       console.log(response); // Show the HTML for the Google homepage.
+       console.log(body);
+       console.log('slut'); // Show the HTML for the Google homepage.
+     }
+    })
+
 app.get('/login', function(req, res) {
 
   var state = generateRandomString(16);
@@ -91,14 +101,12 @@ app.get('/callback', function(req, res) {
             refresh_token = body.refresh_token;
 
         var options = {
-          url: 'https://api.spotify.com/v1/me',
-          headers: { 'Authorization': 'Bearer ' + access_token },
-          json: true
+          url: 'https://www.googleapis.com/prediction/v1.6/projects/atlantean-field-115005/trainedmodels/languageidentifier?key=AIzaSyDwju_Rv4R9S7H8PWdGkzHKezrRsmDJ0RQ'
         };
 
         // use the access token to access the Spotify Web API
         request.get(options, function(error, response, body) {
-          console.log(body);
+          console.log(response);
         });
 
         // we can also pass the token to the browser to make requests from there
