@@ -15,17 +15,17 @@
       }
     ]
   },
-  "Tag Categorizer" : {
-    "id"              : "tagcategorizer",
-    "type"            : "hosted",
-    "project"         : "414649711441",
-    "hostedModelName" : "sample.tagger",
+  "Music recommendations" : {
+    "id"              : "rec",
+    "type"            : "trained",
+    "project"         : "ai-music-spotify",
+    "hostedModelName" : "rec",
     "user_list"       : {},
-    "description"     : "Tags a given text as pertaining to android, appengine, chrome, or youtube.",
+    "description"     : "Kurs.",
     "fields"          : [
       {
         "label" : "Phrase",
-        "help"  : "Enter text for tag categorization.",
+        "help"  : "Enter song info.",
         "rows"  : "1",
         "cols"  : "50"
       }
