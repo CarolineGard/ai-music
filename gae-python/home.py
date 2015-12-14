@@ -40,7 +40,7 @@ from oauth2client.client import OAuth2WebServerFlow
 SCOPE = ('https://www.googleapis.com/auth/devstorage.read_write ' +
          'https://www.googleapis.com/auth/prediction')
 USER_AGENT = 'try-prediction/1.0'
-DEFAULT_MODEL = 'Language Detection'
+DEFAULT_MODEL = 'Music recommendations'
 SECRETS_FILE = 'rc/client_secrets.json'
 MODELS_FILE = 'rc/models.json'
 

@@ -58,7 +58,7 @@ function draw_chart() {
   chart.draw(data, options);
 
   // Setup hyperlink to support dynamically switching chart type.
-  $('#switch_chart_link').text('Switch chart type');
+  // $('#switch_chart_link').text('Switch chart type');
   $('#switch_chart_link').unbind('click');
   $('#switch_chart_link').click(switch_chart_type);
 }
